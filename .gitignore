@@ -5,6 +5,11 @@
 *.iml
 .idea/
 
+#Eclipse
+.settings/
+.classpath
+.project
+
 ###################
 # Compiled source #
 ###################
