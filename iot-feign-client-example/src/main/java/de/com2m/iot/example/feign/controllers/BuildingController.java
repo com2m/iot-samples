@@ -37,14 +37,14 @@ public class BuildingController {
 		logger.info("Created Building with name: {}", responseBuilding.getName());
 	}
 
-	@RequestMapping(value = "/count")
+	@RequestMapping(value = "/count", method = RequestMethod.GET)
 	public int count() {
 		Resources<Building> buildings = buildingService.getAll();
 
 		return buildings.getContent().size();
 	}
 
-	@RequestMapping(value = "/names")
+	@RequestMapping(value = "/names", method = RequestMethod.GET)
 	public List<String> getNames() {
 		Resources<Building> buildings = buildingService.getAll();
 

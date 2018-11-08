@@ -7,8 +7,10 @@ package de.com2m.iot.example.feign.model;
 
 public class Building {
 
-	private String name;
+	private String name = "";
 
+	public Building() {
+	}
 
 	public String getName() {
 		return name;
