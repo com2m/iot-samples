@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.com2m.iot</groupId>
@@ -9,7 +9,9 @@
 	<packaging>jar</packaging>
 
 	<properties>
-		<java.version>1.8</java.version>
+		<java.version>11</java.version>
+		<jaxb.version>2.2.11</jaxb.version>
+		<activasion.version>1.1.1</activasion.version>
 		<spring-hateoas.version>0.24.0.RELEASE</spring-hateoas.version>
 	</properties>
 
@@ -53,6 +55,25 @@
 			<artifactId>spring-hateoas</artifactId>
 			<version>${spring-hateoas.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.xml.bind</groupId>
+			<artifactId>jaxb-api</artifactId>
+			<version>${jaxb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-core</artifactId>
+			<version>${jaxb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.xml.bind</groupId>
+			<artifactId>jaxb-impl</artifactId>
+			<version>${jaxb.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>${activasion.version}</version>
+		</dependency>
 	</dependencies>
-
 </project>
