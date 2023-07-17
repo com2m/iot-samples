@@ -12,7 +12,7 @@
 		<java.version>11</java.version>
 		<jaxb.version>2.2.11</jaxb.version>
 		<activasion.version>1.1.1</activasion.version>
-		<spring-hateoas.version>0.24.0.RELEASE</spring-hateoas.version>
+		<spring-hateoas.version>1.5.5</spring-hateoas.version>
 	</properties>
 
 	<parent>
